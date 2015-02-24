@@ -34,9 +34,7 @@ public class TranskripNilai {
 		if (Transkrip.validasiIPK(ipk)) {
 			Mahasiswa mhs = new Mahasiswa("123040100", "Asep Supriatna");
 			Transkrip transkrip = new Transkrip(3.4);
-
 			mhs.setTranskrip(transkrip);
-
 			System.out.println(mhs.keteranganTranskrip());
 		} else {
 			System.out.println("Inputan tidak sesuai range nilai (0-4)");
