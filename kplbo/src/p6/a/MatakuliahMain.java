@@ -1,10 +1,13 @@
 package p6.a;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class MatakuliahMain {
 
 	Scanner sc = new Scanner(System.in);
+	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 	public static void main(String[] args) {
 		MatakuliahMain mkn = new MatakuliahMain();
@@ -32,30 +35,26 @@ public class MatakuliahMain {
 				+ matkul.getNilaimk().getIndex(matkul.hitungNilai()));
 	}
 
-	public void inputMhs(Mahasiswa mhs) {
+	public void inputMhs(Mahasiswa mahasiswa) {
 		System.out.print("Masukkan nrp : ");
-		mhs.setNomorMahasiswa(sc.next());
+		String nrp = sc.next();
+		mahasiswa.setNomorMahasiswa(nrp);
 		System.out.print("Masukkan nama : ");
-		mhs.setNama(sc.next());
+		mahasiswa.setNama(sc.next());
 	}
 
 	public void inputNilai(Matakuliah mk) {
-		try {
-			System.out.print("Nilai Tugas : ");
-			double tugas = sc.nextDouble();
-			System.out.print("Nilai Kuis : ");
-			double kuis = sc.nextDouble();
-			System.out.print("Nilai UTS : ");
-			double uts = sc.nextDouble();
-			System.out.print("Nilai UAS : ");
-			double uas = sc.nextDouble();
-			System.out.print("Nilai Praktikum : ");
-			double prak = sc.nextDouble();
-			mk.setNilaiMatakuliah(tugas, kuis, uts, uas, prak);
-		} catch (Exception e) {
-			// TODO: handle exception
-			System.out.println(e.getMessage());
-		}
+		System.out.print("Nilai Tugas : ");
+		double tugas = sc.nextDouble();
+		System.out.print("Nilai Kuis : ");
+		double kuis = sc.nextDouble();
+		System.out.print("Nilai UTS : ");
+		double uts = sc.nextDouble();
+		System.out.print("Nilai UAS : ");
+		double uas = sc.nextDouble();
+		System.out.print("Nilai Praktikum : ");
+		double prak = sc.nextDouble();
+		mk.setNilaiMatakuliah(tugas, kuis, uts, uas, prak);
 	}
 
 }

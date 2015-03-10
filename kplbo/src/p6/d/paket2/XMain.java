@@ -5,7 +5,7 @@ import p6.d.paket1.X;
 public class XMain {
 	
 	public static void main(String[] args) {
-		X x = new X(4);
+		X x = new X();
 		x.x2 = 5;
 		System.out.println(x.getX2());
 				

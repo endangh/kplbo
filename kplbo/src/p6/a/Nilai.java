@@ -85,7 +85,6 @@ public class Nilai {
 		} else {
 			idx = "E";
 		}
-
 		return idx;
 	}
 
