@@ -9,7 +9,6 @@ public class A {
 
 	// latihan2
 	public A(int n1) {
-		
 		this.n1 = n1;
 	}
 
