@@ -1,8 +1,13 @@
 package p9.a;
 
+/**
+ * @author endanghidayat
+ *
+ */
 public class ArrayTipePrimitif {
 	public static final int MAX_ELEMEN = 10;
-	
+	private int angka;
+
 	public static void main(String[] args) {
 		int [] arr;
 		arr = new int[MAX_ELEMEN];
