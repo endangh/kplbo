@@ -4,22 +4,18 @@ public class Mahasiswa {
 	
 	private String nrp;
 	private String nama;
-	
-	
 	private Transkrip transkrip;
 	
 	public Mahasiswa() {
-		super();
+		
 	}
 
 	public Mahasiswa(String nrp, String nama) {
-		super();
 		this.nrp = nrp;
 		this.nama = nama;
 	}
 
 	public Mahasiswa(String nrp, String nama, Transkrip transkrip) {
-		super();
 		this.nrp = nrp;
 		this.nama = nama;
 		this.transkrip = transkrip;
